@@ -1,16 +1,8 @@
 const mongoose = require("mongoose");
+
 const { encrypt, decrypt } = require('../cryptionHandler');
 const Schema = mongoose.Schema;
-/*
-const RoomsSchema=new Schema({
-    RoomName:{
-        type:String
-    },
-    RoomCode:{
-        type:String
-    }
-})
-*/
+
 const SignUp = new Schema({
     Username: {
         type: String,
