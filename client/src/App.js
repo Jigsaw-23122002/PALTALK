@@ -2,6 +2,8 @@ import './App.css';
 import Login from './login';
 import Main from './Main';
 import Help from './Help'
+import CreateRoom from './CreateRoom';
+import JoinRoom from './JoinRoom';
 import io from "socket.io-client";
 import { useEffect, useState } from 'react';
 import {
@@ -24,7 +26,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header title="Sociablast" />
+      <Header title="PalTalk" />
       {(socket !== undefined) ?
 
 
@@ -34,6 +36,8 @@ function App() {
             <Route path="/SignUp" element={<SignUp />} />
             <Route path="/Login" element={< Login />} />
             <Route path="/Help" element={<Help />} />
+            <Route path="/CreateRoom" element={<CreateRoom />} />
+            <Route path="/JoinRoom" element={<JoinRoom />} />
 
             
           </Routes>
