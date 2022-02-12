@@ -23,7 +23,7 @@ const Login = () => {
     const [newPage, setNewPage] = useState(false);
     const [linker, setLinker] = useState(false);
     const { user, setuser } = useContext(UserContext);
-    const { deluxe, setDeluxe ,socket} = useContext(UserContext);
+    const { deluxe, setDeluxe, socket } = useContext(UserContext);
     const formSubmit = (e) => {
         e.preventDefault();
         const newEntry = {
