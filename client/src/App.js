@@ -1,5 +1,7 @@
 import './App.css';
 import Login from './login';
+import Main from './Main';
+import Help from './Help'
 import io from "socket.io-client";
 import { useEffect, useState } from 'react';
 import {
@@ -28,9 +30,11 @@ function App() {
 
         <UserContext.Provider value={{ user, setuser, deluxe, setDeluxe, joinJoined, setJoinJoined, remJoinChat, socket, setRemJoinChat, messageList, setMessageList, color, setColor }}>
           <Routes>
-           
+            {<Route exact path="/" element={<Home />} />}
             <Route path="/SignUp" element={<SignUp />} />
             <Route path="/Login" element={< Login />} />
+            <Route path="/Help" element={<Help />} />
+
             
           </Routes>
         </UserContext.Provider> : <div></div>}
