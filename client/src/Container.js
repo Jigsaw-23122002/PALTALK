@@ -7,11 +7,11 @@ function Container(props) {
     let Roomname = props.Rname;
     const { joinJoined, setJoinJoined } = useContext(UserContext);
     const { remJoinChat, setRemJoinChat } = useContext(UserContext);
-    const { messageList, setMessageList, deluxe, socket } = useContext(UserContext);
+    const { messageList, setMessageList ,deluxe,socket} = useContext(UserContext);
 
     function func() {
         setMessageList([]);
-        socket.emit('JoinJoinedRooms', { Roomname: Roomname, user: deluxe.Username });
+        socket.emit('JoinJoinedRooms', {Roomname:Roomname,user:deluxe.Username});
     }
 
     useEffect(() => {
