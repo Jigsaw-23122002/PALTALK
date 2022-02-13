@@ -16,6 +16,7 @@ const SignUp = (props) => {
             password: password,
             username: username
         }
+        console.log(newEntry);
         socket.emit("signUpSubmit", newEntry);
     }
     useEffect(() => {
