@@ -16,7 +16,7 @@ import {
 } from "react-router-dom";
 import SignUp from './SignUp';
 import Home from './Home';
-import UserContext, { socket } from './UserContext';
+import UserContext,{socket} from './UserContext';
 function App() {
   const [user, setuser] = useState(null);
   const [deluxe, setDeluxe] = useState({});
@@ -24,7 +24,7 @@ function App() {
   const [remJoinChat, setRemJoinChat] = useState(true);
   const [messageList, setMessageList] = useState([]);
   const [color, setColor] = useState(0);
-
+ 
 
 
   return (
