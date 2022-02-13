@@ -29,10 +29,8 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Header title="Sociablast" />
+      <Header title="PalTalk" />
       {(socket !== undefined) ?
-
-
         <UserContext.Provider value={{ user, setuser, deluxe, setDeluxe, joinJoined, setJoinJoined, remJoinChat, socket, setRemJoinChat, messageList, setMessageList, color, setColor }}>
           <Routes>
             {<Route exact path="/" element={<Home />} />}

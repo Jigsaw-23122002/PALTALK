@@ -3,7 +3,7 @@ import React from "react";
 function Help() {
     return (
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignContent: "center", margin: "20px" }}>
-            <h2 style={{ margin: "10px" }}>Features of the TECHNOBOT!</h2>
+            <h2 style={{ margin: "10px" }}>Features of the PalTalk!</h2>
             <table>
                 <tr >
                     <th className="tableheading">Sr No.</th>
